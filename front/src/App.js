@@ -1,6 +1,6 @@
 import React from 'react';
 import './Styles/CardStyle.css';
-import {HashRouter as Router, Route, Link, Switch} from 'react-router-dom'
+import {Route, Link, Switch} from 'react-router-dom'
 import Container from 'react-bootstrap/Container';
 import Navbar  from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav'
@@ -45,7 +45,7 @@ class App extends React.Component {
  
   render() {
    return(
-     <Router>
+     <div>
      <Container fluid={true}>
      <Navbar className="top-nav">
      <Navbar.Brand>Reina Suzuki</Navbar.Brand>
@@ -68,7 +68,7 @@ class App extends React.Component {
      <Footer />
      </Container>
 
-     </Router>
+     </div>
    )
  }
 }
