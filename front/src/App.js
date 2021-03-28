@@ -1,6 +1,6 @@
 import React from 'react';
 import './Styles/CardStyle.css';
-import {HashRouter as Router, Route, Link, Switch} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom'
 import Container from 'react-bootstrap/Container';
 import Navbar  from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav'
