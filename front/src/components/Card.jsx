@@ -2,16 +2,9 @@ import React, { Component} from 'react';
 import '../Styles/CardStyle.css';
 import {Spring} from 'react-spring/renderprops';
 import {Card} from 'react-bootstrap/';
-import {Row} from 'react-bootstrap/';
-import {Col} from 'react-bootstrap/';
 import {Container} from 'react-bootstrap/';
-import {CardGroup} from 'react-bootstrap/';
 import { Button} from 'react-bootstrap/';
 import quoteApi from '../assests/quoteApi.png';
-import kishimoto from '../assests/kishimoto.png';
-import zoological from '/Users/suzurei/Documents/PortfolioReact/myWork/front/src/assests/zoological.png';
-import kenkobook from '/Users/suzurei/Documents/PortfolioReact/myWork/front/src/assests/kenkobook.png';
-import CardLayout from './CardLayout';
 import Image from 'react-bootstrap/Image';
 import style from './Styles/style.css';
 
