@@ -1,6 +1,6 @@
 import React from 'react';
 import Hero from '../components/Hero';
-import Carousel from '../components/Carousel';
+import CardLayout from '../components/CardLayout';
 
 
 function Homepage(props){ 
@@ -9,7 +9,7 @@ function Homepage(props){
     return(
         <div>
         <Hero title={props.title} subtitle={props.subtitle}/>
-        <Carousel />
+        <CardLayout />
         </div>);
 
 

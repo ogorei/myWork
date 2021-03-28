@@ -12,9 +12,6 @@ return(
 <Col className="p-10" md="3" sm="12">
 Designing Tomorrow
 </Col>
-<Col className="p-10" md="3" sm="12">
-Site made by R.S
-</Col>
 
 </Row>
 

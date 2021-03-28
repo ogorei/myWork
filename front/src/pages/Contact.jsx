@@ -2,22 +2,15 @@ import React, { Component} from 'react';
 import {Button} from 'react-bootstrap';
 import {Form} from 'react-bootstrap';
 import Hero from '../components/Hero';
-import axios from 'axios';
+import emailjs from 'emailjs-com';
+import apiKeys from '../mail_apikey';
 
 
 export default class Contact extends Component {
-/* constructor(props){
-    super(props);
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-    this. */
 state = {
-name: '',
-email: '', 
-textarea: '',
-emailSent: false,
-disable: false
-
+  name: '',
+  email: '', 
+  textarea: '',
 }
 
 handleName　= (event)=>{
@@ -42,19 +35,13 @@ handleName　= (event)=>{
     
 
 handleSubmit=(event) => {
-    //prevent refreshing the page
-event.preventDefault();
-let data = {
- name: this.state.name,
- email: this.state.email,
- textarea: this.state.textarea
-}
-
-axios.post('api/forma', data)
-.then(res =>{
-  this.setState({emailSent: true}, this.resetForm())
-}) 
-.catch(()=>{console.log("message not sent")})
+emailjs.sendForm(apiKeys.service_id, apiKeys.template_id, event.target, apiKeys.user_id)
+.then(result => {
+alert('ご連絡ありがとうございます。2日間以内に返事をさせていただきます。', result.text);
+},
+error => {
+alert( 'メッセージを送信されませんでした。',error.text)
+})
 
 }
 
@@ -96,4 +83,7 @@ render() {
  }
 
 
+
 }
+
+

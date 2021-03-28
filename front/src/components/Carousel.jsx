@@ -1,59 +1,47 @@
 import React from 'react';
-import { Card } from 'react-bootstrap/';
+import { Row } from 'react-bootstrap/';
+import {Col} from 'react-bootstrap/';
+import { Image} from 'react-bootstrap/'
 import { Button } from 'react-bootstrap/';
-import {Spring} from 'react-spring/renderprops';
-import presentation from '../assests/Presentation -1.png';
-import github from '../assests/github.png';
-import reina from '../assests/reinaSu.png';
+import {Container} from 'react-bootstrap/';
+import purpleBack from '../assests/purpleBack.jpeg';
 import '../Styles/CardStyle.css';
 
 
-const Carousel = ()=>{
 
-  const cardBackground={
-    width: "20rem",
-    margin:"1rem",
-    border:'none',
-    textAlign:'center', 
-    boxShadow:'-4px, -4px, 10px, 0px #000', 
-    backgroundColor: '#dbceb0'
-  }
+function Carousel ({data}) {
+  return (
+    <div id="work-container" className="container mt-5">
+      <div className="row">
+        <div className="col-md-4">
+          <img src={data.image} fluid></img>
+        </div>
+        <div className="col-md-8">
+        <h3>{data.title}</h3>
+        <p>{data.description}</p>
+        <h5>{data.tools}</h5>
 
-    const cardContent= [
-        {image:reina, title: "ABOUT ME", subtitle:"学歴や今までのキャリアについて確認"},
-        {image:presentation, title:"WORKS", subtitle: "デザイナーとしての活躍", link:"https://www.behance.net/reinasuzuki/projects"},
-        {image:github, title:"CONTRIBUTIONS", subtitle: "オープンソースへの貢献", link:"https://github.com/reinasuzu"}
-    ]
+        <Row> 
+                  <Col className="d-flex justify-content-start">
+                      <div className="py-3"> 
+                          <a href={data.link}target="_blank">
+                          <Button size="sm" variant="success">DEMOを見る</Button>
+                          </a>
+                      </div>
+                  </Col>
+              </Row>
 
-    const renderCard= (card, index)=>{
-    return(
-        <div>
-        <Card style={cardBackground} key={index}>
-        <Card.Header as="h5" style={{border: '1px solid #dbceb0', backgroundColor:'#454140', color:"#fff", padding:"2rem", marginTop: "0"}}>{card.title}</Card.Header>  
-        <Card.Body>
-            <Card.Img style={{margin:"0", padding:"0"}} src="holder.js/100px180" src={card.image}/>
-            <Card.Text style={{marginTop:"1rem", color:"#fff"}}>
-              {card.subtitle}
-            </Card.Text>
-            <Button href={card.link} variant="light">More</Button> 
-          </Card.Body>
-        </Card>
+
+
+
+        </div>
       </div>
-    )
-    }
 
-    return (
-  <Spring 
-    from={{opacity: 0, marginTop:-500}}
-    to= {{opacity: 1, marginTop: 0}} >
-    {props =>(   
-      <div style={props} className="main-card" key={cardContent.title}>
-      {cardContent.map(renderCard)}
-      </div>
-    
-         )}
-    
-  </Spring>
 
-    )}
+    </div>
+
+  );
+};
+
+    
 export default Carousel;
