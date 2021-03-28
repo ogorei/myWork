@@ -6,7 +6,6 @@ import {Container} from 'react-bootstrap/';
 import { Button} from 'react-bootstrap/';
 import quoteApi from '../assests/quoteApi.png';
 import Image from 'react-bootstrap/Image';
-import style from './Styles/style.css';
 
 export default function Card1() {
 

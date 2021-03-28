@@ -1,8 +1,5 @@
 import React from 'react';
 import Hero from '../components/Hero';
-import Works from '../components/Works';
-import Card1 from '../components/Card';
-import Carousel from '../components/Carousel';
 import SmallProject from '../components/SmallProject';
 
 
