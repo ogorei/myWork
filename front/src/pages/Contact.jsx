@@ -2,7 +2,6 @@ import React, { Component} from 'react';
 import {Button} from 'react-bootstrap';
 import {Form} from 'react-bootstrap';
 import Hero from '../components/Hero';
-import emailjs from 'emailjs-com';
 import apiKeys from '../mail_apikey';
 
 
@@ -34,16 +33,16 @@ handleName　= (event)=>{
 
     
 
-handleSubmit=(event) => {
-emailjs.sendForm(apiKeys.service_id, apiKeys.template_id, event.target, apiKeys.user_id)
-.then(result => {
-alert('ご連絡ありがとうございます。2日間以内に返事をさせていただきます。', result.text);
-},
-error => {
-alert( 'メッセージを送信されませんでした。',error.text)
-})
+// handleSubmit=(event) => {
+// emailjs.sendForm(apiKeys.service_id, apiKeys.template_id, event.target, apiKeys.user_id)
+// .then(result => {
+// alert('ご連絡ありがとうございます。2日間以内に返事をさせていただきます。', result.text);
+// },
+// error => {
+// alert( 'メッセージを送信されませんでした。',error.text)
+// })
 
-}
+// }
 
 //reseting data
 
