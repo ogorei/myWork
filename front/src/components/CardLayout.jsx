@@ -2,7 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import reina from '../assests/reinaSu.png';
+import reina from '../assests/reinaSu.jpeg';
 import Image from 'react-bootstrap/Image';
 import Button from 'react-bootstrap/Button';
 import style from '../Styles/CardStyle.css';
@@ -18,7 +18,7 @@ const CardLayout =()=>{
             {/* description */}
             <Col xs={7} md={8} lg={6} align-items-center >
               <Row id="pr_text"className="align-items-center py-4">
-                  <h2>Reina N. Suzuki</h2>
+                  <h2>Reina N. Ogo</h2>
 
                 "多摩大学(経営情報学部)卒業後、TESOL(英語教授法・英語教育学)の資格を取得し学校法人トラベルジャーナル学園に入社。
                 英語教員だけでなく、日本学生の留学支援、留学アドバイザーも務める。
@@ -36,12 +36,12 @@ const CardLayout =()=>{
                           </a>
                       </div>
                       <div className="py-3"> 
-                          <a href="https://www.behance.net/reinasuzuki" target="_blank">
+                          <a href="https://www.behance.net/ogorei" target="_blank">
                           <Button size="sm" variant="outline-success">Behanceを見る</Button>
                           </a>
                       </div>
                       <div className="py-3"> 
-                          <a href="https://github.com/reinasuzu">
+                          <a href="https://github.com/reinaogo1">
                           <Button size="sm"  variant="outline-primary">GitHubを確認</Button>
                           </a>
                       </div>

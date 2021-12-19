@@ -15,7 +15,7 @@ class App extends React.Component {
    super(props);
    //state of navbar
    this.state={
-     title:'Reina N.Suzuki',
+     title:'Reina Ogo',
      //content needed for the nav bar 
      headerLinks:[
        {title: 'Home', path: '/'},
@@ -48,7 +48,7 @@ class App extends React.Component {
      <div>
      <Container fluid={true}>
      <Navbar className="top-nav">
-     <Navbar.Brand>Reina Suzuki</Navbar.Brand>
+     <Navbar.Brand>Reina Ogo</Navbar.Brand>
      <Navbar.Toggle className="border-0"></Navbar.Toggle>
      <Navbar.Collapse id="navbar-toggle">
 

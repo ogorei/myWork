@@ -3,7 +3,7 @@ import Carousel from '../components/Carousel';
 import presentation from '../assests/presentation.png';
 import colorpicker from '../assests/colorpicker.png';
 import zoological from '../assests/zoological.png';
-import quoteApi from '../assests/quoteApi.png';
+import quoteApi from '../assests/quote.png';
 
 
 const SmallProject=()=>{
