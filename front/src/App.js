@@ -48,7 +48,7 @@ class App extends React.Component {
      <div>
      <Container fluid={true}>
      <Navbar className="top-nav">
-     <Navbar.Brand>Reina Ogo</Navbar.Brand>
+     <Navbar.Brand>[O.R]</Navbar.Brand>
      <Navbar.Toggle className="border-0"></Navbar.Toggle>
      <Navbar.Collapse id="navbar-toggle">
 

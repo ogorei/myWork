@@ -31,18 +31,13 @@ const CardLayout =()=>{
               <Row> 
                   <Col className="d-flex justify-content-start">
                       <div className="py-3"> 
-                          <a href="/Contact">
-                          <Button size="sm" variant="outline-info">メールする</Button>
-                          </a>
-                      </div>
-                      <div className="py-3"> 
                           <a href="https://www.behance.net/ogorei" target="_blank">
-                          <Button size="sm" variant="outline-success">Behanceを見る</Button>
+                          <Button size="sm" variant="outline-success">GitHub</Button>
                           </a>
                       </div>
                       <div className="py-3"> 
                           <a href="https://github.com/reinaogo1">
-                          <Button size="sm"  variant="outline-primary">GitHubを確認</Button>
+                          <Button size="sm"  variant="outline-primary">Behance</Button>
                           </a>
                       </div>
                   </Col>
